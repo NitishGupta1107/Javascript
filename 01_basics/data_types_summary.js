@@ -46,3 +46,42 @@ const myFunction = function (){
 }
 
 console.log(typeof(myFunction))
+
+
+// Memory in js
+
+// Stack,Heap
+
+// Primitve uses Stack
+//Non primitive data Types use Heap memory
+
+let myName = "Nitish gupta"
+
+let anothername = myName;
+anothername = "Satyam"
+
+console.log(myName);
+console.log(anothername);
+
+// Whatever the things declared in stack is being passed as a copy // like call by value
+
+let userOne = {
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+
+
+let userTwo = userOne;
+// Here userTwo will take the reference of the Userone and can directly manipulate the userone
+
+userTwo.email = "nitish@google.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
+
+//Non primitive data types goes in the heap and can be taken as reference
+
+
